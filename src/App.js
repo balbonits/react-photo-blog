@@ -1,24 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Nav from './components/Nav/Nav.js';
+import PhotoGrid from './components/PhotoGrid/PhotoGrid.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Nav className={"App-header-nav"} />
+        <a className={'App-header-logo'}><img src={logo} /></a>
       </header>
+      <div className={'AppContent'}>
+        <PhotoGrid />
+      </div>
+      <footer></footer>
     </div>
   );
 }

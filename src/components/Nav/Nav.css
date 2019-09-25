@@ -1,0 +1,23 @@
+.nav {
+    position:relative;
+    display:block;
+    clear:both;
+}
+
+.nav > ul {
+    display:block;
+    list-style-type: none;
+}
+
+.nav > ul > li.nav-item {
+    display:inline-block;
+    margin: 0 0.5em;
+}
+
+.nav > ul > li.nav-item:first-of-type {
+    margin-left:0;
+}
+
+.nav > ul > li.nav-item:last-of-type {
+    margin-right:0;
+}
